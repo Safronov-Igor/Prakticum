@@ -1,0 +1,96 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/description/description.css);
+div {
+  border: 1px solid red;
+}
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: white;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  background-color: #f2f2f2;
+
+  /* выше установили ограничения для секции */
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+.Inter-Regular {
+  font-weight: normal;
+
+}
+.Inter-Bold {
+  font-weight: 800;
+}
+.Inter-SemiBold {
+  font-weight: 600;
+
+}
+.Inter {
+  font-size: 25px;
+  color: #000000;
+}
+.parent {
+  position: relative;
+}
+.header_place_logo {
+  background-image: url(../images/logo.svg);
+  margin:30px 64px;
+  width: 183px;
+  height: 32px;
+
+}
+.header_title {
+  line-height: 96px;
+  font-size: 102px;
+  width: 730px;
+  margin-left: 64px;
+  display: flex;
+  font-weight: 600;
+
+}
+.header_subtitle {
+  line-height: 25px;
+  width: 388px;
+  margin: 30px 64px;
+  font-weight: normal;
+
+  }
+  .child {
+    position: absolute;
+    left: 64px;
+    bottom: 30px;
+  }
+
+.footer_place_logo {
+  background-image: url(../images/logo_white.svg);
+  margin:30px 64px;
+  width: 183px;
+  height: 35px;
+  background-color: black;
+}
+
+
